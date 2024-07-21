@@ -1,0 +1,23 @@
+﻿<Window x:Class="LibraryAppWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Library App" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin="10">
+            <Button Content="Save Books" Click="OnSaveClicked" Margin="5"/>
+            <Button Content="Load Books" Click="OnLoadClicked" Margin="5"/>
+            <Button Content="Add Book" Click="OnAddBookClicked" Margin="5"/>
+            <Button Content="Search Book" Click="OnSearchBookClicked" Margin="5"/>
+            <Button Content="Remove Book" Click="OnRemoveBookClicked" Margin="5"/>
+            <Button Content="List All Books" Click="OnListAllBooksClicked" Margin="5"/>
+            <Button Content="Check Word in Titles" Click="OnCheckWordClicked" Margin="5"/>
+            <Button Content="Add Reader" Click="OnAddReaderClicked" Margin="5"/>
+            <Button Content="List All Readers" Click="OnListAllReadersClicked" Margin="5"/>
+            <Button Content="Add Favorite Book to Reader" Click="OnAddFavoriteBookToReaderClicked" Margin="5"/>
+            <Button Content="Exit" Click="OnExitClicked" Margin="5"/>
+            <ListBox x:Name="BooksListBox" Height="200" Margin="5"/>
+            <TextBlock x:Name="MessageTextBlock" TextWrapping="Wrap" Margin="5"/>
+        </StackPanel>
+      
+    </Grid>
+</Window>
